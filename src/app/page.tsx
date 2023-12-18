@@ -150,8 +150,8 @@ export default function Home() {
               </h2>
               <h3 className='sm:w-[450px] text-[16px] text-main-color-black'>Your gateway to web experiences that transcend the ordinary. With a passion for front-end development, I bring pixel-perfect precision and captivating user interfaces to the forefront.</h3>
               <div className='flex gap-3 mt-[10px]'>
-                <a href='#contact'><button className='lg:p-5 lg:px-8 sm:p-3 p-4 px-3 sm:px-5 bg-main-color text-[15px] text-main-color-white rounded-full flex items-center   ' id='#contact'>Contact Me  <i className='bx bx-chevron-right bx-fade-right text-[20px] arrow animate-moveRightAndBack animation-duration-2s'></i></button></a>
-                <a href='#portfolio'><button className='lg:p-5 lg:px-8 sm:p-3 p-4 px-3 sm:px-5 bg-gradient-to-r from-main-color-gray-dark to-main-color-darker  inline-block  text-main-color-white rounded-full flex items-center  '>My Works <i className='bx bx-chevron-right bx-fade-right text-[20px] arrow animate-moveRightAndBack animation-duration-2s'></i></button></a>
+                <a href='#contact'><button className='lg:p-3 lg:px-8 sm:p-3 p-4 px-3 sm:px-5 bg-main-color text-[15px] text-main-color-white rounded-full flex items-center   ' id='#contact'>Contact Me  <i className='bx bx-chevron-right bx-fade-right text-[20px] arrow animate-moveRightAndBack animation-duration-2s'></i></button></a>
+                <a href='#portfolio'><button className='lg:p-3 lg:px-8 sm:p-3 p-4 px-3 sm:px-5 bg-gradient-to-r from-main-color-gray-dark to-main-color-darker  inline-block  text-main-color-white rounded-full flex items-center  '>My Works <i className='bx bx-chevron-right bx-fade-right text-[20px] arrow animate-moveRightAndBack animation-duration-2s'></i></button></a>
               </div>
             </div>
             <div className="relative ">
