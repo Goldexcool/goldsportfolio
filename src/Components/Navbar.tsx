@@ -129,8 +129,9 @@ const Navbar = () => {
   return (
     <main className=''>
       <div className="flex items-center justify-center max-w-full mt-4 ">
-        <div className="flex justify-center w-full mx-auto">
-          <nav className={`flex items-center justify-between fixed mx-auto px-[2rem]  lg:px-[5rem] xl:px-[18rem] md:px-[4rem]  top-0 left-0 right-0 w-full transition-all ease-in-out duration-300 p-[1rem] z-50 ${scrollY >= 50 ? 'bg-main-color-white shadow-2xl' : 'bg-main-color-white '
+        <div className="flex justify-center lg:w-[900px] mx-auto">
+          
+          <nav className={`flex items-center justify-between fixed mx-auto px-[2rem] md:px-[6rem] lg:px-[5rem] xl:px-[18rem] w-full top-0 left-0 right-0 transition-all ease-in-out duration-300 p-[1rem] z-50 ${scrollY >= 50 ? 'bg-main-color-white shadow-2xl' : 'bg-main-color-white '
             }`}>
             <div className={`text-[20px] bg-gradient-to-r from-blue-600  to-purple-400 inline-block text-transparent bg-clip-text ${textGradientClass}`}>
               <h1>Goldexcool</h1>
@@ -173,7 +174,7 @@ const Navbar = () => {
           </nav>
         </div>
       </div>
-      <div className={`hamburger-menu lg:hidden fixed left-0 top-0 h-full sm:w-[70px] md:w-[50%] bg-main-ham  transform transition-transform ease-in-out duration-300 z-[1000] ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+      <div className={`hamburger-menu lg:hidden fixed left-0 top-0 h-full w-[50%] bg-main-ham  transform transition-transform ease-in-out duration-300 z-[1000] ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="close-button p-4 cursor-pointer absolute top-0 right-0" onClick={toggleMenu} >
           <i className="bx bx-x text-main-color-black text-2xl" ></i>
         </div>
