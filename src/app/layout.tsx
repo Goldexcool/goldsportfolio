@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer' 
 
 export const metadata: Metadata = {
   title: 'Goldexcool Portfolio',
@@ -13,7 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body >{children}</body>
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></link>
+      <body>
+        <Navbar/>
+        {children}
+        <Footer/>
+        </body>
     </html>
   )
 }

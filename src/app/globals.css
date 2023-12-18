@@ -3,14 +3,188 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+:root,
+#root,
+#docs-root {
+  --main-color: #5c12d4;
+  --main-ham: #5c12d4;
+  --main-color-light: hsl(261, 71%, 58%);
+  --main-color-dark: hsl(265, 86%, 36%);
+  --main-color-lighter: hsl(259, 61%, 69%);
+  --main-color-darker: #2a0887;
+  --main-color-lightest: hsl(273, 40%, 80%);
+  --main-color-darkest: hsl(251, 100%, 30%);
+  --main-color-white: hsl(0, 0%, 100%);
+  --main-color-black: hsl(0, 0%, 0%);
+  --main-color-gray: hsl(0, 0%, 25%);
+  --main-color-gray-dark: hsl(0, 0%, 90%);
+  --main-footer: #5c12d4;
 }
-*{
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: .5s;
+}
+
+::-webkit-scrollbar {
+  width: .7rem;
+  background: var(--main-color-white);
+}
+
+::-webkit-scrollbar-thumb {
+  padding: 2px;
+  background: var(--main-color);
+  border-radius: 5px;
+}
+
+body {
+  background-color: var(--main-color-white);
+}
+
+body.dark-theme {
+  --main-color: #5c12d4;
+  --main-ham: #000814;
+  --main-color-light: hsl(261, 71%, 58%);
+  --main-color-dark: hsl(265, 86%, 36%);
+  --main-color-lighter: hsl(259, 61%, 69%);
+  --main-color-darker: #2a0887;
+  --main-color-lightest: hsl(273, 40%, 80%);
+  --main-color-darkest: hsl(251, 100%, 30%);
+  --main-color-white: #000814;
+  --main-color-black: #f8f9fa;
+  --main-color-gray: #f8f9fa;
+  --main-color-gray-dark: #f8f9fa;
+  --dark-bg-color: #f8f9fa;
+  --main-footer: #1d232c;
+}
+
+
+.mask-image {
+  /* Define your masking effect here */
+  mask-image: url('../Images//WhatsApp_Image_2023-11-04_at_09.23.48-removebg-preview.png');
+  mask-repeat: no-repeat;
+  mask-size: cover;
+}
+
+.openfront-end {
+  animation: slideInDown 0.5s ease-in-out;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.openfront-end {
+  animation: slideInDown 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.bx--chevron-up {
+  transition: transform 0.5s ease-in-out;
+  transform: rotate(0deg);
+  transition: .7s;
+}
+
+.bx--chevron-up:active {
+  transform: rotate(180deg);
+  outline: none;
+}
+
+.bx--chevron-down {
+  transition: transform 0.5s ease-in-out;
+  transform: rotate(0deg);
+  transition: .7s;
+}
+
+.bx--chevron-down:active {
+  transform: rotate(180deg);
+  outline: none;
+}
+
+.svg {
+  fill: #5c12d4;
+  stroke: #5c12d4;
+  stroke-width: 1px;
+}
+
+#app {
+  height: 100%;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+  
+body {
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-first {
+  background-image: url(../Images/graph.png);
+}
+
+.bg-mask {
+  background-image: url(../Images/WhatsApp_Image_2023-11-04_at_09.23.48-removebg-preview.png);
+}
+
+
+.preloader {
+  @apply fixed top-0 left-0 w-full h-full flex justify-center items-center bg-white;
+  z-index: 1000;
+  /* Ensure it's above other elements on the page */
+}
+
+.visible {
+  @apply opacity-100 pointer-events-auto transition-opacity duration-500 ease-in-out;
+}
+
+.hidden {
+  @apply opacity-0 pointer-events-none transition-opacity duration-500 ease-in-out;
+}
+
+
+@keyframes scaleInOut {
+
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.loading {
+  animation: scaleInOut 2s infinite;
 }
 
