@@ -131,7 +131,7 @@ const Navbar = () => {
       <div className="flex items-center justify-center max-w-full mt-4 ">
         <div className="flex justify-center lg:w-[900px] mx-auto">
           
-          <nav className={`flex items-center justify-between fixed mx-auto px-[2rem] md:px-[6rem] lg:px-[5rem] xl:px-[18rem] w-full top-0 left-0 right-0 transition-all ease-in-out duration-300 p-[1rem] z-50 ${scrollY >= 50 ? 'bg-main-color-white shadow-2xl' : 'bg-main-color-white '
+          <nav className={`flex items-center justify-between fixed mx-auto px-[2rem] md:px-[6rem] lg:px-[5rem] xl:px-[14rem] w-full top-0 left-0 right-0 transition-all ease-in-out duration-300 p-[1rem] z-50 ${scrollY >= 50 ? 'bg-main-color-white shadow-2xl' : 'bg-main-color-white '
             }`}>
             <div className={`text-[20px] bg-gradient-to-r from-blue-600  to-purple-400 inline-block text-transparent bg-clip-text ${textGradientClass}`}>
               <h1>Goldexcool</h1>
