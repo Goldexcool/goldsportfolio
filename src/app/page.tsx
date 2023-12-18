@@ -8,7 +8,7 @@ import { useState, useEffect, useRef } from 'react';
 import frontEnd from '../Images/bx-code-curly.svg'
 import up from '../Images/bxs-chevron-up.svg'
 import down from '../Images/bxs-chevron-down.svg'
-import Portfolio from '../Data/portfolio';
+import Portfolio from "../data/portfolio"
 import contact from '../data/contact'
 import conta from '../Images/istockphoto-1458164457-612x612.jpg'
 import server from '../Images/bx-server.svg'
